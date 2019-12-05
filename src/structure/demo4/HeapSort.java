@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class HeapSort {
     public static void main(String[] args) {
-        int[] arr = new int[]{9, 6, 8, 7, 0, 1, 10, 4,2};
+        int[] arr = new int[]{9, 6, 8, 7, 0, 1, 10, 4,2,40,28,15,14,13,5,13};
         heapSort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -29,6 +29,7 @@ public class HeapSort {
     /**
      * 子树进行大小比较并交换
      * @param arr   放入数组
+     * @param size 数组长度
      * @param index 第几个非叶子节点开始比较
      */
     public static void maxHeap(int[] arr,int size, int index) {

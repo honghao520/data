@@ -1,5 +1,8 @@
 package structure.demo6;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Node implements Comparable<Node>{
     Byte data;//字节码
     int weight;//权值

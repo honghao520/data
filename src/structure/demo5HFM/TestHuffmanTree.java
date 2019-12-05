@@ -30,6 +30,8 @@ public class TestHuffmanTree {
             nodes.remove(right);
             //加起来构成一个新的二叉树
             Node newNode = new Node(left.value + right.value);
+            newNode.right = right;
+            newNode.left = left;
             //添加到原来数组中
             nodes.add(newNode);
         }
