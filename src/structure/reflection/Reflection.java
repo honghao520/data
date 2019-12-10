@@ -22,6 +22,10 @@ public class Reflection implements ReflectionDome{
 
     @Override
     public void reflectionMethod(int i){
+        System.out.println("我是reflection接口的实现类的方法1"+i);
+    }
+
+    public void reflectionMethod(){
         System.out.println("我是reflection接口的实现类的方法1");
     }
 }
